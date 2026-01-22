@@ -2,11 +2,13 @@
 % Brett Reynolds
 % March 13, 2026
 
-\documentclass[aspectratio=169,14pt]{beamer}
+\documentclass[aspectratio=169,12pt]{beamer}
 
-% Theme
+% Theme - clean, minimal
 \usetheme{metropolis}
-\usecolortheme{default}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{frametitle}{bg=black,fg=white}
 
 % Fonts
 \usepackage{fontspec}
@@ -16,8 +18,6 @@
 
 % Packages
 \usepackage{booktabs}
-\usepackage{tikz}
-\usetikzlibrary{positioning,decorations.pathmorphing}
 
 % Custom commands
 \newcommand{\term}[1]{\textsc{#1}}
@@ -30,85 +30,33 @@
 \title{Varieties as Conditioning Structure}
 \author{Brett Reynolds}
 \institute{Humber College}
-\date{LVC Research Group\\March 13, 2026}
+\date{LVC Research Group --- March 13, 2026}
 
 \begin{document}
 
 % ============================================================================
-\begin{frame}
+{
+\setbeamertemplate{footline}{}
+\begin{frame}[noframenumbering]
+\vspace{-2em}
 \titlepage
 \end{frame}
+}
 
 % ============================================================================
-\begin{frame}{}
-\centering
-\Large
+\begin{frame}{The claim}
 
-With friends after school:\\[0.5em]
-\textit{``Yo, mans made it---finally done that assignment.''}
-
-\vspace{2em}
-\pause
-
-Ten minutes later, with a teacher:\\[0.5em]
-\textit{``Yeah, I finished it this morning.''}
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-What just happened?
-
-\vspace{2em}
-\pause
-
-\begin{tabular}{rl}
-Register shift? & \textit{(situation changed)}\\[0.5em]
-\pause
-Code-switching? & \textit{(between what and what?)}\\[0.5em]
-\pause
-Style-shifting? & \textit{(toward whose style?)}\\[0.5em]
-\pause
-Dialect suppression? & \textit{(is MTE a dialect?)}\\
-\end{tabular}
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-The standard labels don't quite fit.
+\large
+Register, dialect, and discourse community aren't three kinds of thing.
 
 \vspace{1em}
+
+They're three different \textbf{anchors} for appropriateness judgments.
+
+\vspace{1.5em}
 
 \normalsize
-\textbf{Register} = situational variation\\
-\textbf{Dialect} = geographic/social variation\\
-\textbf{Discourse community} = group-based variation
-
-\vspace{1em}
-\pause
-
-But these criteria blur and overlap.\\[0.5em]
-What \textit{kind of thing} is the difference between \mention{mans} and \mention{I}?
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-Different question:
-
-\vspace{1em}
-
-What makes a form \textbf{appropriate}---\\and what is that appropriateness \textbf{indexed to}?
+The framework: varieties as \textbf{conditioning structure} --- stable patterns in what forms are appropriate given what.
 
 \end{frame}
 
@@ -117,243 +65,199 @@ What makes a form \textbf{appropriate}---\\and what is that appropriateness \tex
 
 \textbf{Wiese (2023):} Grammar lives in \term{communicative situations}, not named languages. Varieties describe regularities across situations.
 
-\vspace{1em}
-\pause
+\vspace{1.5em}
 
-\textbf{O'Connor (2019):} Linguistic choices solve \term{coordination problems}. What stabilises is what's useful, not what clusters naturally.
+\textbf{O'Connor (2019):} Linguistic choices solve \term{coordination problems}. What stabilises is what coordinates, not what clusters naturally.
 
-\vspace{1em}
-\pause
+\vspace{1.5em}
 
-\textbf{Combined:} Varieties are stable partitions of situation-space, shaped by coordination.
+\textbf{Combined:} Varieties are stable partitions of situation-space, shaped by coordination pressures.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
+\begin{frame}{The three anchors}
 
-\begin{center}
-\Large
-Appropriateness is indexed to \textbf{three different anchors}:
-\end{center}
-
-\vspace{1em}
-
-\begin{center}
-\large
-\begin{tabular}{lll}
+\small
+\begin{tabular}{@{}lll@{}}
 \toprule
-\textbf{Anchor} & \textbf{Question} & \textbf{Old label}\\
+\textbf{Anchor} & \textbf{Conditions on} & \textbf{Traditional label}\\
 \midrule
-\textsc{Situation} & What's the context? & Register\\[0.4em]
-\textsc{Ascription} & What are you treated as? & Dialect\\[0.4em]
-\textsc{Identification} & Whose norms do you orient to? & Discourse community\\
+\term{Situation} & Activity, setting, goals & Register\\[0.5em]
+\term{Ascription} & How you're classified & Dialect\\[0.5em]
+\term{Identification} & Whose norms you orient to & Discourse community\\
 \bottomrule
 \end{tabular}
-\end{center}
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-
-\begin{tikzpicture}
-  % Left field - Ascription
-  \shade[ball color=blue!30, opacity=0.6] (-3,0) circle (2.5cm);
-  \node[font=\large\bfseries] at (-3,2) {Ascription};
-  \node[font=\small, text width=3cm, align=center] at (-3,0) {What you're\\treated as};
-  \node[font=\footnotesize, text width=3cm, align=center] at (-3,-1.2) {(background, history,\\perceived membership)};
-
-  % Right field - Identification
-  \shade[ball color=orange!30, opacity=0.6] (3,0) circle (2.5cm);
-  \node[font=\large\bfseries] at (3,2) {Identification};
-  \node[font=\small, text width=3cm, align=center] at (3,0) {Who you're\\with};
-  \node[font=\footnotesize, text width=3cm, align=center] at (3,-1.2) {(whose norms you accept,\\whose approval you seek)};
-
-  % Speaker in the middle
-  \node[circle, fill=black, inner sep=3pt, label=below:{\small speaker}] at (0,-0.5) {};
-
-  % Arrows showing pull
-  \draw[->, thick, blue!60, decorate, decoration={snake, amplitude=1mm, segment length=3mm}] (-0.3,-0.5) -- (-1.8,-0.3);
-  \draw[->, thick, orange!60, decorate, decoration={snake, amplitude=1mm, segment length=3mm}] (0.3,-0.5) -- (1.8,-0.3);
-\end{tikzpicture}
 
 \vspace{1em}
-\pause
+\normalsize
 
-These can \textbf{align}---or they can \textbf{pull apart}.
+Same judgment type. Different conditioning variable.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
-\centering
-\Large
+\begin{frame}{Unpacking the anchors}
 
-Back to our speaker.
+\textbf{Situation:} Observable context --- what we're doing, where, with what stakes.
+
+\vspace{1em}
+
+\textbf{Ascription:} Social classification by others --- how listeners place you, based on perceived background, history, group membership. Not chosen.
+
+\vspace{1em}
+
+\textbf{Identification:} Normative orientation --- whose approval you seek, whose standards you hold yourself to. Chosen (within constraints).
+
+\end{frame}
+
+% ============================================================================
+\begin{frame}{The interesting space}
+
+\large
+Ascription and identification can \textbf{align} --- or they can \textbf{diverge}.
+
+\vspace{1em}
+\normalsize
+
+When they align: forms appropriate to your ascribed variety also signal your identification. No tension.
+
+\vspace{0.8em}
+
+When they diverge: you're navigating between how you're heard and who you're orienting to.
+
+\vspace{1em}
+
+\textbf{That gap is where style-shifting, accommodation, and ``passing'' live.}
+
+\end{frame}
+
+% ============================================================================
+\begin{frame}{A case}
+
+Someone ascribed as an MTE speaker, with friends:
+
+\vspace{0.5em}
+\hspace{2em}\mention{Yo, mans made it --- finally done that assignment.}
 
 \vspace{1.5em}
 
-\normalsize
-\begin{tabular}{ll}
-\textbf{Ascription:} & MTE speaker (that's how they're heard)\\[1em]
-\pause
-\textbf{With friends:} & Identification aligns with ascription\\
-& $\rightarrow$ \mention{mans made it}\\[1em]
-\pause
-\textbf{With teacher:} & Situation shifts---and maybe identification\\
-& orients elsewhere\\
-& $\rightarrow$ \mention{I finished it}\\
+Same person, ten minutes later, with a teacher:
+
+\vspace{0.5em}
+\hspace{2em}\mention{Yeah, I finished it this morning.}
+
+\vspace{1.5em}
+
+The situation shifted. But so might identification --- orienting to different norms, seeking different approval.
+
+\end{frame}
+
+% ============================================================================
+\begin{frame}{What this reframes}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Old framing} & \textbf{New framing}\\
+\midrule
+Code-switching between X and Y & Shift in conditioning anchor\\[0.4em]
+Style as individual expression & Coordination with a reference group\\[0.4em]
+Dialect as property of speaker & Ascription by listeners\\[0.4em]
+Register as property of situation & What situation licenses\\
 \end{tabular}
 
-\end{frame}
+\vspace{1em}
 
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-Now imagine: years later, even with close friends,\\they say \mention{I} instead of \mention{mans}.
-
-\vspace{1.5em}
-\pause
-
-The situation didn't change.\\[0.5em]
-The ascription didn't change.\\[0.5em]
-\pause
-\textbf{The identification changed.}
-
-\vspace{1.5em}
-\pause
-
-\textit{That's} where the agency is.
+The categories don't disappear. They get reanalysed as dimensions of conditioning.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
-\centering
+\begin{frame}{Agency}
+
 \large
+Ascription is imposed. Identification is (partially) chosen.
 
-Style-shifting. Accommodation. ``Passing.''\\Professional socialisation. Code-switching.
-
-\vspace{1.5em}
-
-All of these live in the \textbf{gap}\\between ascription and identification.
-
-\vspace{1.5em}
-\pause
-
+\vspace{1em}
 \normalsize
-Not the only locus of agency---but a major one.
+
+The gap between them is a major locus of speaker agency.
+
+\vspace{1em}
+
+Years later, even with close friends, someone might say \mention{I finished} instead of \mention{mans made it}. Same situation, same ascription. Different identification.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
-\centering
-\Large
+\begin{frame}{The dark side}
 
-Now the darker part.
+A teacher hears \mention{mans} and something shifts --- in expectations, evaluation, behaviour.
+
+\vspace{0.8em}
+
+That shift is an appropriateness judgment, conditioned on inferred ascription.
+
+\vspace{0.8em}
+
+When everyone makes similar judgments, they become \textbf{coordination signals}.
+
+\vspace{0.8em}
+
+``Standard'' vs ``non-standard'' = stable equilibrium. Self-sustaining. Hard to exit unilaterally.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
-\centering
+\begin{frame}{Not fatalism}
+
 \large
-
-A teacher hears \mention{mans} and something shifts---\\in their expectations, their evaluation, their behaviour.
-
-\vspace{1.5em}
-\pause
-
-That shift is a \textbf{judgment of appropriateness},\\conditioned on an inferred ascription.
+This is a diagnosis, not an excuse.
 
 \vspace{1.5em}
-\pause
-
-And when everyone makes similar judgments,\\those judgments become \textbf{coordination signals}.
-
-\vspace{1.5em}
-\pause
-
 \normalsize
-``Standard'' vs ``non-standard'' = stable equilibrium.\\
-Self-sustaining. Hard to exit unilaterally.
+
+Coordination equilibria are stable, but they're not immutable.
+
+\vspace{1em}
+
+Change requires changing payoffs or changing what's conditioned on --- not just changing attitudes.
+
+\vspace{1em}
+
+The framework makes visible \textit{where} intervention could work.
 
 \end{frame}
 
 % ============================================================================
-\begin{frame}{}
-\centering
-\Large
+\begin{frame}{Summary}
 
-This isn't an excuse. It's a diagnosis.
+\begin{enumerate}
+\item Varieties are conditioning structures, not kinds of language
+\item Register, dialect, discourse community = three anchors for the same judgment
+\item The ascription--identification gap is analytically central
+\item Inequity stabilises through coordination, not just prejudice
+\end{enumerate}
 
 \vspace{1.5em}
+
+{\small Paper: \texttt{github.com/BrettRey/Varieties-as-Conditioning-Structure}}
+
+\end{frame}
+
+% ============================================================================
+\begin{frame}{Discussion}
+
 \large
 
-You can't talk your way out of a coordination problem.\\[0.5em]
-\pause
-The game structure has to change.
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-So what changes?
-
-\vspace{1.5em}
-\pause
-
-\normalsize
-\textbf{For analysis:}\\
-Register, dialect, discourse community\\aren't three kinds of thing.\\
-They're three \textit{anchors} for appropriateness judgments.
-
-\vspace{1em}
-\pause
-
-\textbf{For the phenomena:}\\
-Watch the gap between ascription and identification.\\
-That's where the action is.
-
-\vspace{1em}
-\pause
-
-\textbf{For intervention:}\\
-Change what's conditioned on, or change the consequences.
-
-\end{frame}
-
-% ============================================================================
-\begin{frame}{}
-\centering
-\Large
-
-\textbf{Discussion}
-
-\vspace{1.5em}
-\large
-
-Does the ascription/identification distinction\\do useful work for what you study?
+Does the S/A/I distinction help with phenomena you work on?
 
 \vspace{1em}
 
-How would you operationalise it?
+Where does it break?
 
 \vspace{1em}
 
-What breaks it?
-
-\vspace{2em}
-\small
-Paper: \url{github.com/BrettRey/Varieties-as-Conditioning-Structure}
+What would operationalising it look like?
 
 \end{frame}
 
