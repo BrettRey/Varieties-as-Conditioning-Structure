@@ -19,3 +19,8 @@
 # Editor backups
 *~
 *.swp
+
+# Beamer artifacts
+*.nav
+*.snm
+*.vrb
