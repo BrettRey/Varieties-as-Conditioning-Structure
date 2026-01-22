@@ -1,0 +1,371 @@
+% Varieties as Conditioning Structure
+% Brett Reynolds
+% 2026
+
+\documentclass[11pt,letterpaper]{article}
+
+% House style preamble
+\input{.house-style/preamble}
+
+% Document metadata
+\title{Varieties as Conditioning Structure:\\
+A Game-Theoretic and Bayesian Framework}
+\author{Brett Reynolds\\
+\small Humber College\\
+\small \href{mailto:brett.reynolds@humber.ca}{brett.reynolds@humber.ca}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+What distinguishes register from dialect from discourse community? This paper argues that these aren't three kinds of thing but three dimensions of \term{appropriateness}~-- what makes a form felicitous~-- indexed to different anchors. Register indexes appropriateness to \textsc{situation} (the here-and-now). Dialect indexes it to \textsc{ascription} (the social categories a speaker belongs to). Discourse community indexes it to \textsc{identification} (the group whose norms the speaker orients to). The key insight is the distinction between ascription and identification: ascription is what you \emph{are treated as}; identification is who you're \emph{with}. These can align or diverge~-- and the divergence is a major locus of sociolinguistic agency. I develop this framework by combining \posscite{wiese2023} account of communicative situations as the primary unit of grammatical organisation with \posscite{oconnor2019games} game-theoretic explanation of why certain partitions stabilise.
+\end{abstract}
+
+% ============================================================================
+\section{Introduction}
+% ============================================================================
+
+Linguists frequently invoke the concepts of \term{register}, \term{dialect}, and \term{discourse community} to explain variation, but the boundaries between these categories remain blurry. Is a \enquote{legal variety} a register or a discourse community? Is Multicultural Toronto English a dialect or a set of community-anchored registers?
+
+Standard definitions rely on external criteria: dialects are geographic or social, registers are functional or situational. But these criteria often conflict or overlap. A speaker's \enquote{casual register} in one analysis might be another analyst's \enquote{vernacular dialect}. The professional jargon of lawyers might be a register (situational) or a discourse community marker (group-indexed) depending on what question you're asking.
+
+This paper proposes a different approach. Instead of defining variety types by their external correlates, I ask: what makes a form \term{appropriate}~-- and what is that appropriateness indexed to?
+
+The answer involves three dimensions. \textsc{Situation}: what's fitting in this context. \textsc{Ascription}: what's expected from someone in this social position. \textsc{Identification}: what's normal for the group whose norms you orient to. These map onto register, dialect, and discourse community respectively.
+
+The key insight is the distinction between ascription and identification. Ascription is what you \emph{are treated as}~-- the social categories assigned to you by self and others. Identification is who you're \emph{with}~-- the group whose norms you accept, whose approval you seek. These can align or diverge. A working-class kid in law school has an ascribed position but identifies with a new community. Style-shifting, code-switching, and accommodation all operate in this space between ascription and identification. That space is a major locus of sociolinguistic agency.
+
+Two theoretical sources underpin this framework. From \textcite{wiese2023}: the primary unit of grammatical organisation isn't the named language but the \term{communicative situation}~-- the setting of communication as perceived by speakers. From \textcite{oconnor2019games}: the categories that stabilise in a population track \term{payoff space}, not \term{property space}. Varieties emerge as stable strategies in recurring coordination problems.
+
+Putting these together: register, dialect, and discourse community aren't three kinds of thing. They're three dimensions of appropriateness, distinguished by what they're indexed to.
+
+This paper does philosophy of sociolinguistics. The contribution is conceptual, not empirical: I'm not presenting new data about any variety but offering a framework for seeing how concepts already in use relate to each other and what that means for practice.
+
+% ============================================================================
+\section{Communicative situations as the primary unit}
+% ============================================================================
+
+\textcite{wiese2023} argues that grammar doesn't live inside named languages; it lives inside communicative situations. A \term{communicative situation} (com-sit) is the setting of communication as perceived by speakers: a dynamic, socially interpreted bundle of situational characteristics including participants, activity type, medium, goals, and stance.
+
+The key move is that com-sits are primary. Language categories emerge from com-sit distributions; com-sits don't derive from pre-existing language borders.
+
+\subsection{Evidence from free-range settings}
+
+Wiese draws on \enquote{free-range} language settings~-- contexts less constrained by monolingual or standard ideologies~-- to make the underlying organisation visible. Urban markets with high linguistic diversity demonstrate translinguistic constructions and emergent local norms. Heritage language settings show com-sit distinctions tied to interlocutors and activities. Multiethnic adolescent peer groups exhibit contact varieties~-- Kiezdeutsch in Berlin, Multicultural Toronto English in Toronto~-- that emerge in tightly defined com-sits and expand as their com-sit base widens.
+
+These settings reveal the conditioning structure precisely because named-language ideologies are weak. The same mechanisms operate in monolingual settings, but the social overlay of language labels obscures them.
+
+\subsection{Acquisition of com-sit conditioning}
+
+Children learn com-sit differentiation early. Wiese describes a child who initially uses a \enquote{Daddy register}~-- German exclusively with father, and only with father~-- then later broadens to a conventional com-sit definition (German in wider contexts). The idiosyncratic stage highlights that com-sit identification is a \emph{learned hypothesis}, not a fixed property of the input.
+
+This acquisition pattern matters for the Bayesian framing developed below: learners track which conditioning variables matter and update their expectations accordingly. The child's initial overly narrow conditioning is later revised as evidence accumulates.
+
+\subsection{Three consequences}
+
+Wiese's framework has three immediate consequences for how we think about variety concepts:
+
+\begin{enumerate}
+    \item What we call \textbf{register} is appropriateness indexed to \textsc{situation}~-- the conditional reweighting of options induced by the here-and-now. An MTE speaker uses more MTE features with friends than with a teacher; the situation shifts, and the distribution shifts with it.
+    \item What we call \textbf{dialect} is appropriateness indexed to \textsc{ascription}~-- durable distributional differences tied to social categories speakers belong to. The same speaker's MTE features reflect where they grew up and who they grew up talking to; this baseline persists across situations.
+    \item What we call \textbf{discourse community} is appropriateness indexed to \textsc{identification}~-- the reference population whose norms the speaker orients to. Whether that speaker treats MTE or Standard Canadian English as the baseline for \enquote{normal} depends on who they're identifying with~-- and that can change.
+\end{enumerate}
+
+(I retain \enquote{discourse community} for the third term, though the concept here is broader than its technical use in applied linguistics, where it typically implies shared goals, genres, and gatekeeping practices. The core idea~-- a reference population whose norms one orients to~-- is closer to what sociologists call a \term{reference group} or what Eckert might call a \term{community of practice}. I keep the traditional label for continuity with the variety-types literature.)
+
+But Wiese's framework is primarily descriptive. It tells us that com-sits are the primary unit, but not \emph{why} certain partitions of com-sit space stabilise rather than others. For that, we need game theory.
+
+% ============================================================================
+\section{Com-sits as coordination problems}
+% ============================================================================
+
+\textcite{oconnor2019games} uses evolutionary game theory to ask: do linguistic terms evolve to track property clusters? Her answer is sobering. Even when property clusters exist, evolved terms may be \emph{conventional}~-- different stable partitions can emerge that don't map cleanly to the natural clusters. And when successful action depends on payoff structure rather than property structure, terms track payoff-relevant distinctions.
+
+The upshot: terms track payoff space, not property space.
+
+\subsection{Communicative situations as payoff structures}
+
+This insight transforms how we think about varieties. Communicative situations aren't just settings; they're \term{payoff structures}. When speakers choose among variant forms, they're solving \term{coordination problems}: signalling identity, managing politeness, avoiding conflict, claiming authority, marking solidarity.
+
+Consider an MTE speaker navigating a day in Toronto. With neighbourhood friends, using MTE features signals local identity and solidarity~-- the perceived payoff is belonging. With a teacher, a customer at work, or a job interviewer, suppressing those features manages impression~-- the perceived payoff is being taken seriously. Neither choice is more \enquote{authentic}; both are rational responses to different payoff structures.
+
+The partitions that stabilise~-- what we call registers, dialects, and discourse communities~-- are stable strategies in these coordination games. They stabilise not because they mirror some intrinsic clustering of linguistic properties, but because they solve recurring social problems.
+
+This explains why sociolinguistic categories are often messy. Variety boundaries are shaped by payoff relevance (identity, prestige, alignment) rather than by structural clustering alone. Multiple overlapping categories can coexist because different payoff spaces yield different stabilised partitions.
+
+\subsection{Conventionality comes in degrees}
+
+\textcite{oconnor2021-conventionality} develops this further by showing that conventions vary in their degree of arbitrariness. Some conventions are tightly constrained~-- only a few outcomes were ever plausible. Others are highly arbitrary~-- many alternatives could have stabilised.
+
+For linguistic varieties, this means:
+\begin{itemize}
+    \item Some features are \textbf{low-arbitrariness}: turn-taking repair strategies, articulatory constraints on phonology, information-structural defaults. These are tightly constrained by functional pressures.
+    \item Others are \textbf{high-arbitrariness}: specific discourse markers, particular politeness formulae, lexical choices for in-group signalling. These could have been otherwise.
+\end{itemize}
+
+In MTE, th-stopping may be relatively low-arbitrariness~-- a common outcome of language contact, emerging independently in many multilingual urban settings. But specific MTE discourse markers or slang items are higher-arbitrariness: they could have been different, and their particularity is what makes them useful for in-group signalling.
+
+The key insight: \enquote{functional doesn't mean inevitable; arbitrary doesn't mean useless.} A feature can be both functionally motivated and historically contingent to different degrees.
+
+\subsection{Categories and social outcomes}
+
+\textcite{oconnor2022contracts} adds a further dimension. When social categories become salient in coordination games, the equilibria that emerge tend to be inequitable~-- discriminatory norms emerge and persist even when most participants would prefer otherwise. This has significant implications for how variety labels function socially, implications I'll develop in Section~\ref{sec:inequity} after the framework is fully in place.
+
+% ============================================================================
+\section{Varieties as emergent partitions}
+% ============================================================================
+
+Combining Wiese and O'Connor yields a unified picture. Varieties are stable partitions of com-sit space, shaped by payoff relevance and sustained by coordination dynamics. But to make this precise, we need to ask: what exactly are we partitioning? What's the fundamental category?
+
+\subsection{Appropriateness as the fundamental category}
+
+I propose that we're dimensioning \term{appropriateness}~-- what makes a form felicitous in context. Appropriateness has multiple facets: a form can be grammatical but situationally awkward, or phonetically marked but structurally fine. These facets are conditioned differently. Register fit is primarily \textsc{situation}-conditioned: what's fitting here and now. Phonetic/accent fit is primarily \textsc{ascription}-conditioned~-- the patterns you bring with you~-- though \textsc{identification} matters when orienting to a new group's norms. Grammaticality is conditioned on both \textsc{ascription} and \textsc{identification}: what counts as grammatical depends on whose data you're drawing from (your community baseline) and whose norms you're orienting to \citep[for extended discussion of these facets]{reynolds2025stack}. For present purposes, the key point is that all facets of appropriateness are conditioned, and the three dimensions below specify \emph{what} they're conditioned on.
+
+Appropriateness is always indexed to something: a form isn't appropriate simpliciter, but appropriate \emph{given} some anchor. The traditional variety types differ in what that anchor is.
+
+To make this concrete: appropriateness, as I'll use it, is a listener's evaluative response to a form given their inferred conditioning state. A listener hears a form, infers something about the situation, the speaker's social position, and whose norms are in play, then evaluates the form against what they'd expect given those inferences. \enquote{Appropriate} means: this form is likely given my conditioning; \enquote{inappropriate} means: unlikely. The evaluation is probabilistic, gradient, and relative to the listener's model~-- which may differ from the speaker's. This is the sense of appropriateness that the three dimensions below are dimensions \emph{of}.
+
+This yields three dimensions:
+
+\begin{itemize}
+    \item \textsc{Situation}: What context are we in? Appropriateness indexed to the here-and-now: activity type, medium, formality, audience. This is what \term{register} tracks.
+    \item \textsc{Ascription}: What category does the speaker belong to? Appropriateness indexed to social position: region, ethnicity, class, generation~-- features that are assigned or inherited, not chosen. This is what \term{dialect} tracks.
+    \item \textsc{Identification}: Whose norms is the speaker orienting to? Appropriateness indexed to group allegiance: the community whose usage the speaker treats as the baseline for correctness. This is what \term{discourse community} tracks.
+\end{itemize}
+
+Of these three, only \textsc{situation} falls squarely within Wiese's com-sit framework. Com-sits are defined by activity type, medium, participants present, goals, stance~-- features of the here-and-now. \textsc{Ascription} is different: it's what the speaker \emph{brings to} the com-sit, their durable social position that conditions behaviour across com-sits. And \textsc{identification} is a learner-side variable~-- whose usage the speaker is tracking as a reference for what's normal. Wiese's framework enables these dimensions but doesn't explicitly theorise them. What we're adding is the claim that appropriateness depends not just on the com-sit but on who you are and who you're orienting to.
+
+The key distinction is between \textsc{ascription} and \textsc{identification}. Ascription is what you \emph{are treated as}~-- the social categories assigned to you by self and others, based on background, history, or perceived membership. It's a classification process, not a metaphysical essence: ascriptions can be contested, strategically managed, and revised over time, but they have material consequences because others condition their behaviour on them. Identification is who you're \emph{with}~-- the group whose norms you accept, whose approval you seek, whose usage you try to match. These can align (you identify with your ascribed community) or diverge (you orient to a community you weren't born into).
+
+This divergence is a major locus of sociolinguistic agency. A working-class kid in law school has an ascribed position (class background, regional origin) but identifies with a new community (legal profession). Their speech reflects both: the ascribed baseline modulated by the identificational target. Similarly, a speaker from a multiethnic Toronto neighbourhood may be ascribed to Multicultural Toronto English but identify differently depending on context~-- embracing it with friends, orienting toward Standard Canadian English with a teacher, or code-switching fluidly across the day. Style-shifting, code-switching, passing, and accommodation all operate in this space between ascription and identification.
+
+\subsection{Stability profiles}
+
+The three dimensions aren't parallel in type~-- they're different \emph{kinds} of conditioning variables, operating at different levels and with different update dynamics:
+
+\begin{itemize}
+    \item \textbf{Situation} is token-level: it shifts rapidly~-- within a day, within a conversation, sometimes within an utterance. It's largely determined by external context.
+    \item \textbf{Ascription} is speaker-level: it's durable, tracking features that others (and self) treat as stable properties of the speaker. Ascriptions are often externally assigned and hard to shake, though they can be contested and may shift over biographical time.
+    \item \textbf{Identification} is trajectory-level: it's negotiable but sticky. You can change who you orient to, but such changes are effortful and socially consequential. Identification can also be audience-specific~-- you might orient to different norm centres with different interlocutors~-- and it can be multi-layered, with competing identifications in tension.
+\end{itemize}
+
+This maps onto the traditional intuitions: registers shift fast, dialects are stable, communities are chosen but hard to switch. The framework makes explicit not just that they differ in stability, but \emph{why}: they operate at different levels and have different update dynamics.
+
+\subsection{Preserving working distinctions}
+
+This analysis doesn't collapse the traditional categories. It clarifies what makes them different. Register, dialect, and discourse community remain useful working concepts~-- they pick out real patterns that matter for sampling, stratification, and analysis. What the framework adds is a principled account of \emph{why} they're different: they anchor appropriateness to different things.
+
+The practical distinctions hold. If you're studying regional variation, you're conditioning on ascription. If you're studying style-shifting, you're looking at how situation modulates an ascribed baseline. If you're studying professional socialisation, you're tracking how identification shifts. The framework doesn't dissolve these~-- it tells you what you're doing when you make them.
+
+An objection: if dialect indexes ascription, how do we handle stylisation, crossing, and second-dialect acquisition~-- cases where speakers use features not \enquote{theirs}? The answer is that ascription is an inferred category assignment, not a metaphysical property. When a speaker stylises another variety, listeners may update their ascription of that speaker, or may hear the tokens as marked performance against an unchanged ascription. When someone acquires a second dialect through long-term mobility, their ascription shifts~-- others begin treating them as belonging to a different category. The framework predicts exactly this: ascription is what you're treated as, and what you're treated as can change through sustained behaviour, even if such changes are slow and contested. Crossing and stylisation are cases where the speaker's behaviour and the listener's ascription are strategically misaligned~-- and that misalignment is socially meaningful precisely because ascription normally predicts behaviour.
+
+\subsection{Ballroom culture as a case study}
+
+Consider how variety features actually spread. Lexical items like \mention{shade}, \mention{read}, \mention{tea}, \mention{slay}, and \mention{serving} originated in Black and Latino queer ballroom culture. This community involved both ascription (race, sexuality) and identification (participation in ball culture, house membership)~-- real communities often do. The triad doesn't require that communities be purely one-dimensional; it's about which anchor \emph{dominates} appropriateness judgments for particular forms. For ballroom vocabulary, identification was the dominant anchor: these forms were in-group markers, indexing orientation to ballroom norms.
+
+In the game-theoretic framework: using these forms signalled membership and solved coordination problems (who belongs? who has authority to judge?). The forms stabilised because they served payoff-relevant functions for people who identified with that community.
+
+Then the identificational base expanded. \emph{RuPaul's Drag Race} brought ballroom discourse to wider audiences, and the forms began appearing in new contexts~-- first among people identifying with broader queer culture, then stan Twitter, then mainstream social media. What started as identification markers developed situational variation (ironic vs.\ sincere use, in-group vs.\ appropriative use). Some items are now general English.
+
+This trajectory illustrates the framework. The variety dimensions aren't fixed categories~-- they're descriptions of how appropriateness is currently anchored. Ballroom vocabulary began as identification-indexed (you used it to claim membership), developed situational conditioning as it spread (appropriate in some contexts but not others), and for some items is now approaching ascription-like durability as younger speakers acquire it without the original identificational reference~-- it's just how people their age talk.
+
+% ============================================================================
+\section{Bayesian formalisation}
+% ============================================================================
+
+The game-theoretic account explains \emph{why} certain partitions stabilise. The Bayesian account explains \emph{how} learners track them. The two are complementary: games explain population-level dynamics; Bayes explains individual learning.
+
+The core idea is simple: learners keep track of which forms are appropriate in which circumstances, and they update their expectations as they accumulate experience. The formal machinery just makes this precise.
+
+\subsection{Setup}
+
+Consider a choice point~-- a \term{constructional niche}~-- where speakers choose among alternatives that perform roughly the same communicative function. Think of first-person \mention{mans} vs.\ \mention{I}~-- a niche where MTE speakers have an option that Standard Canadian English speakers lack \citep{denis2016mans}. An MTE speaker might say \mention{mans made it} with friends but \mention{I made it} with a teacher. The form varies by situation, but only MTE speakers have both options.
+
+For each utterance, we can note:
+\begin{itemize}
+    \item What variant the speaker used
+    \item The situational context (formal meeting? casual chat?)
+    \item The speaker's social position (where they grew up, what groups they belong to)
+    \item Whose usage the speaker seems to be orienting to
+\end{itemize}
+
+In notation: $Y$ is the observed choice, $S$ captures situation (the here-and-now), $A$ captures ascription (the speaker's social categories), and $I$ captures identification (whose norms the speaker orients to). The learner's task is to figure out: given all this, how likely is each variant?
+
+\subsection{The three dimensions as conditioning variables}
+
+Each dimension plays a distinct role. For readers comfortable with the notation, I'll give the formal statement; the gloss follows.
+
+\textbf{Situation}: If you know the context, you can predict which variants are likely.
+\begin{equation}
+    Y \mid S = s \sim \text{Categorical}(\theta_s)
+\end{equation}
+Gloss: \enquote{The distribution over variants depends on the situation.} With a teacher, a speaker might favour \mention{I}, hoping to come across as professional; with friends, \mention{mans} might feel more natural, signalling solidarity.
+
+\textbf{Ascription}: If you know the speaker's social position, you can predict their baseline tendencies.
+\begin{equation}
+    Y \mid A = a \sim \text{Categorical}(\theta_a)
+\end{equation}
+Gloss: \enquote{The distribution over variants depends on what categories the speaker belongs to.} A speaker ascribed to Multicultural Toronto English might show higher rates of th-stopping, first-person \mention{mans}, or certain intonation patterns~-- features that track where they grew up and who they grew up talking to, and that persist across situations.
+
+\textbf{Identification}: If you know whose norms the speaker is orienting to, you can predict what they'll treat as appropriate.
+\begin{equation}
+    Y \mid I = i \sim \text{Categorical}(\theta_i)
+\end{equation}
+Gloss: \enquote{The distribution over variants depends on who the speaker is trying to sound like.} An MTE speaker who orients to Standard Canadian English norms~-- perhaps hoping that sounding \enquote{standard} will help professionally~-- might suppress \mention{mans} even with friends. One who identifies strongly with the MTE community might not. The question isn't what situation they're in or where they're from, but whose approval they're hoping for.
+
+In practice, all three matter at once. A full model conditions on situation, ascription, and identification together~-- each contributing to the expected distribution.
+
+\subsection{Stability revisited}
+
+The dimensions differ in \textbf{how stable the conditioning is}~-- a point developed in Section~4, but worth restating in probabilistic terms:
+
+\begin{itemize}
+    \item \textbf{Situation} shifts rapidly. The same speaker draws from different distributions in different contexts~-- formal at work, casual at home.
+    \item \textbf{Ascription} is durable. A speaker's baseline tendencies persist across situations because ascription tracks features that don't change moment to moment.
+    \item \textbf{Identification} is negotiable but sticky. You can change who you orient to, but the shift is effortful and has social consequences.
+\end{itemize}
+
+\subsection{Hierarchical structure}
+
+These dimensions interact. A speaker has an ascribed position, chooses (or inherits) an identification, and modulates both by situation. The formal version spells this out as a hierarchical model, but the intuition is straightforward: identification sets the normative target, ascription provides the baseline capacities and tendencies, and situation determines the moment-to-moment realisation.
+
+For quantitative work, this structure matters. Tokens from the same speaker aren't independent; speakers with similar ascriptions share structure; situational effects operate within these nested levels. A Bayesian multilevel model captures this naturally: speaker-level parameters are drawn from ascription-level distributions, which are themselves drawn from population-level priors. Situation enters as a predictor at the token level, but its effect can vary by identification~-- allowing the model to learn that situational sensitivity itself differs depending on whose norms a speaker orients to.
+
+\subsection{Indexicality as inverse conditioning}
+
+This framework makes indexical meaning fall out automatically. If certain forms are more likely in certain contexts, then hearing a form tells you something about the context. That's just Bayes' theorem running in reverse.
+
+\begin{itemize}
+    \item If \mention{mans} is more common in casual, in-group contexts, then hearing \mention{mans} suggests that kind of situation. The form indexes \textsc{situation}.
+    \item If \mention{mans} is more common among speakers from MTE backgrounds, hearing it suggests that background. The form indexes \textsc{ascription}.
+    \item If using \mention{mans} signals orientation to MTE norms, using it claims alignment with that community. The form indexes \textsc{identification}.
+\end{itemize}
+
+Social meaning isn't an arbitrary add-on. It's the informational flip-side of production conditioning. Listeners infer context from forms because speakers condition forms on context.
+
+% ============================================================================
+\section{Normativity and unacceptability}
+% ============================================================================
+
+To what extent does a form sound odd, marked, or wrong? In this framework, the answer is: to the extent that it's unlikely given what the listener expects. The judgment \enquote{that's not how we talk} means: \enquote{given who I think you are, what situation I think we're in, and whose norms I think apply~-- I wouldn't expect that form.}
+
+This makes unacceptability relative to conditioning. The same form can be fine under one set of expectations and jarring under another. th-stopping is unremarkable among MTE speakers but may be noticed~-- and judged~-- by listeners conditioning on Standard Canadian English. A double modal is unremarkable in some Southern American varieties and ungrammatical in others. The form didn't change; the listener's conditioning did.
+
+This account of normativity aligns with what \textcite{pullum2019-normativity} calls the \term{constitutive} view of grammatical rules. Pullum argues that grammatical constraints aren't \term{regulative}~-- they don't tell you what you \emph{ought} to do in some moral sense. They're constitutive: they define what counts as participating in a particular practice. Speaking MTE involves patterning your utterances in the MTE way; that's not an obligation but a condition on the activity. Pullum's point is that grammaticality involves normativity without moral prescription. Departing from English grammar isn't like breaking a traffic law~-- it's more like drifting from what listeners expect, and that drift comes in degrees.
+
+But the analogy Pullum draws with chess rules needs qualification. Chess rules are \emph{stipulated}: they were written down by someone with the authority to declare them. They're \emph{universal}: the same rules apply to everyone playing chess, anywhere. And they're \emph{explicit}: players can consult them. Grammatical constraints are none of these things.
+
+Grammatical constraints are \term{emergent}, not stipulated. They arise from the coordination dynamics described in the preceding sections~-- stable distributions over forms that solve recurring communicative problems. No one declared that English would have subject-auxiliary inversion in questions; it emerged and stabilised. The constitutive force is real~-- the further you deviate, the less you're doing what others are doing~-- but the rules themselves weren't designed.
+
+Grammatical constraints are \term{variety-indexed}, not universal. Which constraints apply depends on what you're conditioning on. The claim that double modals are ungrammatical is true for some English varieties and false for others. There's no variety-neutral grammaticality any more than there's a language-neutral one. Chess has one rule set; English is a family of overlapping conditioning structures, each with its own stable distributions.
+
+Grammatical constraints are \term{tacit}, not explicit. Speakers follow them without being able to state them. You can reliably judge that \mention{*She is liking ice cream} sounds odd without knowing the first thing about stative verbs or the progressive. The constraint is internalised, not consulted.
+
+So: Pullum is right that grammatical normativity is constitutive, not regulative. What you incur when you speak English is a commitment to pattern your speech in the English way, not a moral duty. But the constitutive rules themselves aren't stipulated, aren't universal, and aren't explicit. They're emergent conditioning structures~-- and which conditioning applies is exactly what the situation/ascription/identification framework specifies.
+
+This framing accommodates several observations:
+
+\begin{enumerate}
+    \item \textbf{Gradient judgments}: probability is continuous, so judgments can be gradient.
+    \item \textbf{Context-dependence}: different conditioning yields different expectations.
+    \item \textbf{Norm conflicts}: situations can bring speakers into conflicting expectations~-- especially when ascribed identity norms clash with situational demands. An MTE speaker in a job interview faces exactly this: forms natural to their ascription may be marked in that situation.
+    \item \textbf{Innovation}: a novel form becomes learnable when it is attributed to a distinct com-sit cluster rather than treated as noise in the baseline.
+\end{enumerate}
+
+% ============================================================================
+\section{Varieties, categories, and inequity}
+\label{sec:inequity}
+% ============================================================================
+
+The framework developed in the preceding sections has implications that are uncomfortable but important. Once we understand varieties as coordination equilibria sustained by category salience, we have to face the fact that these equilibria can be~-- and often are~-- inequitable.
+
+\subsection{Standard language ideology as coordination}
+
+Consider a phenomenon sociolinguists know well: standard language ideology. Despite decades of linguists explaining that all varieties are systematic and expressive, the prestige hierarchy persists. An MTE speaker applying for a professional job in Toronto may find their speech~-- th-stopping, distinctive intonation, certain discourse markers~-- working against them. Students are still corrected for \enquote{non-standard} grammar. Why?
+
+The game-theoretic answer: once \enquote{standard} and \enquote{non-standard} become salient categories, they function as coordination signals. Employers coordinate on using \enquote{standard} speech as a hiring filter~-- not because any individual employer decided to discriminate, but because everyone expects everyone else to use this signal, and deviating is costly. The equilibrium is self-sustaining: even employers who know the linguistic facts face pressure to conform to the coordination, because unilateral deviation puts them at a disadvantage.
+
+The minimal conditions for this are simple: (1) individuals recognise social categories, (2) they condition behaviour on category membership, and (3) they adapt to improve their own payoff. Once these conditions are met, coordination can stabilise on unequal outcomes~-- and it can do so even when most participants would prefer a fairer arrangement.
+
+\subsection{Why this isn't fatalism}
+
+This analysis might sound like naturalising discrimination~-- reducing injustice to \enquote{just how coordination works}. It isn't. Equilibria aren't laws of nature; they're contingent on the structure of the game. Change the structure, and you change what's stable.
+
+The framework is diagnostic, not exculpatory. Understanding \emph{why} inequity persists despite good intentions tells us \emph{where to intervene}. And the diagnosis is specific: if linguistic discrimination is a coordination problem, then purely normative interventions~-- telling people to respect all varieties~-- won't be enough. You can't talk your way out of an equilibrium by changing attitudes alone. The coordination structure has to change.
+
+This actually validates what critical sociolinguists have long argued: that individual attitude change is insufficient without structural change. The game-theoretic framing makes this precise. Exhorting fairness doesn't shift equilibria. Anonymising applications, changing institutional policies, removing the signals that coordination locks onto~-- these change the game itself. But removing one signal doesn't guarantee success if other signals remain available; effective intervention requires attending to the full landscape of coordination anchors.
+
+\subsection{The role of category salience}
+
+A key lever is category salience itself. Inequitable equilibria require that categories be recognised and conditioned on. If the category becomes less salient~-- less available as a coordination signal~-- the equilibrium weakens.
+
+This explains something puzzling: why linguistic discrimination sometimes decreases across generations even without explicit intervention. If younger speakers don't recognise a dialect boundary that their grandparents did, the coordination that sustained discrimination against that variety loses its anchor. The category fades, and with it the equilibrium.
+
+It also explains why making categories \emph{more} salient can sometimes backfire. But this claim needs careful bracketing. Salience operates differently in different domains:
+
+\begin{itemize}
+    \item \textbf{Salience for mobilisation}: Making a category visible can be necessary for collective action, solidarity, and resistance. You can't fight discrimination against a group if the group isn't recognised.
+    \item \textbf{Salience as sorting heuristic}: The same visibility can enable discrimination when categories become coordination signals for gatekeeping~-- in hiring, housing, institutional access.
+    \item \textbf{Institutional vs.\ cultural salience}: Categories encoded in forms, checkboxes, and official rubrics may have different effects than categories circulating in everyday talk and awareness.
+\end{itemize}
+
+The framework doesn't say salience is bad. It says salience is a double-edged tool: it enables both solidarity and sorting. In some contexts, de-emphasising category boundaries may reduce discrimination; in others, making categories visible is essential for resistance. The question is always: salience \emph{for what purpose}, \emph{in what domain}, \emph{controlled by whom}?
+
+\subsection{Diffusion, appropriation, and the ecological tradeoff}
+
+The ballroom case from Section~4 illustrates a phenomenon often discussed as cultural appropriation: linguistic forms originating in a marginalised community diffuse to broader populations, losing their community-specific indexicality along the way.
+
+The positive mechanics are clear. When a community's markers spread widely: (1) the forms lose their ability to function as in-group signals, (2) the conditioning structure shifts as forms become associated with new com-sits, and (3) the originating community's conditioning gets overwritten in broader usage. This is diffusion~-- the same process by which any innovation spreads.
+
+But there's a normative tension here, and O'Connor's framework clarifies what it is.
+
+On one hand, category salience is what discrimination coordinates on. If \enquote{ballroom community member} becomes less salient as a category~-- if the forms no longer index that community~-- then discrimination against that community loses one of its coordination anchors. By O'Connor's logic, reduced salience should reduce inequity.
+
+On the other hand, category salience is also what enables community identity, solidarity, in-group coordination, and pride. When markers diffuse and lose their indexical force, the community loses a coordination resource it built.
+
+This is a genuine tradeoff, not a mistake on either side. Communities aren't wrong to value salience; they're also not wrong to recognise what salience enables. The framework doesn't resolve the dilemma~-- it clarifies its structure.
+
+But the tradeoff isn't borne by minority groups alone. Category diversity has system-level costs and benefits.
+
+The benefits of diversity are real. Linguistic innovation often emerges in marginal communities~-- ballroom vocabulary is exactly such a case~-- and enriches the broader repertoire. Multiple communities mean multiple perspectives and challenges to assumptions. Diverse systems are more adaptive; monocultures are efficient but fragile.
+
+The costs of diversity are also real. Coordination is harder with more categories. Conflict is more likely. Transaction costs of navigating difference are non-trivial.
+
+This is an ecological framing. Monocultures are efficient in stable environments but vulnerable to disruption. Diverse ecosystems are less efficient but more resilient and generative. A system that dissolved all category distinctions would reduce the coordination anchors for discrimination~-- but would also lose the niches where innovation emerges.
+
+The question, then, isn't whether appropriation is good or bad in the abstract. It's: how much category differentiation should a system sustain, given that differentiation has both costs (coordination friction, conflict, potential discrimination) and benefits (innovation, adaptability, richness)? That's a collective tradeoff, not one to be resolved by minority communities alone.
+
+\subsection{Implications for the conditioning-structure framework}
+
+For the variety concepts in this paper, the inequity analysis means that category labels~-- \enquote{native speaker}, \enquote{standard}, dialect names, register labels like \enquote{professional}~-- aren't neutral descriptors. Once salient, they become coordination loci for unequal social outcomes.
+
+Stigma and prestige are stable equilibria, not noise or mere prejudice. Register policing (\enquote{professional} language as gatekeeping) is an equilibrium outcome~-- which means it won't yield to appeals alone. It requires changing the coordination structure: what signals institutions use, what categories are available for conditioning, what the payoff landscape looks like for deviation.
+
+The conditioning-structure framework provides a precise vocabulary for this. Discrimination operates through conditioning: institutions condition access on variety membership, and that conditioning stabilises because everyone expects it. To disrupt the equilibrium, you have to disrupt the conditioning~-- either by changing what's conditioned on, or by changing the consequences of the conditioning.
+
+% ============================================================================
+\section{Conclusion}
+% ============================================================================
+
+What distinguishes register from dialect from discourse community? Not the external correlates (situation vs.\ geography vs.\ group membership), but what appropriateness is indexed to: \textsc{situation}, \textsc{ascription}, or \textsc{identification}.
+
+\begin{itemize}
+    \item Register is appropriateness indexed to the here-and-now~-- what's fitting in this context.
+    \item Dialect is appropriateness indexed to ascribed categories~-- what's expected from someone in this social position.
+    \item Discourse community is appropriateness indexed to identification~-- what's normal for the group whose norms you orient to.
+\end{itemize}
+
+The key insight is the distinction between ascription and identification. Ascription is what you \emph{are treated as}; identification is who you're \emph{with}. These can align or diverge~-- and the divergence is a major locus of sociolinguistic agency.
+
+This framework emerges from combining two insights. From \textcite{wiese2023}: the communicative situation is the primary unit of grammatical organisation, and variety concepts describe regularities across com-sits. From \textcite{oconnor2019games,oconnor2021-conventionality,oconnor2022contracts}: com-sits are coordination problems, the partitions that stabilise track payoff relevance, and category salience can stabilise inequity.
+
+The traditional variety concepts remain useful working categories~-- they pick out real patterns that matter for analysis. What the framework adds is a principled account of what makes them different and how they relate. Register, dialect, and discourse community aren't three kinds of thing. They're three dimensions of appropriateness, distinguished by what they're indexed to and how stable that indexing is.
+
+% ============================================================================
+\newpage
+\printbibliography
+% ============================================================================
+
+\end{document}
