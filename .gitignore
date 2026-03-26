@@ -24,3 +24,6 @@
 *.nav
 *.snm
 *.vrb
+
+# Slides build artifacts (from .qmd)
+slides.tex
