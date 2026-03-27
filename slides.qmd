@@ -17,20 +17,24 @@ format:
     self-contained: true
 ---
 
+## A syntactician walks into a study group...
+
+Most of my work has been in English syntax, not LVC, but recently I've been working on some ideas from the philosophy of science that I wanted to share here -- LVC is so important to understanding syntax, and it's a good test case for these ideas. I want to know if this is useful to you or if I'm missing something obvious.
+
+::: {.notes}
+Set expectations. This grew out of my HPC book project, where I needed a principled account of how variety categories work. I'm bringing tools from philosophy of science -- game theory and Bayesian learning -- to concepts you use every day. I want genuine pushback from people who know variation better than I do.
+:::
+
 ## The claim
 
 ::: {.r-fit-text}
-Register, dialect, and discourse community aren't three kinds of thing.
+Register, dialect, and discourse community are three **anchors** for the same judgment.
 :::
-
-. . .
-
-They're three different **anchors** for appropriateness judgments.
 
 The framework: varieties as **conditioning structure** -- stable patterns in what forms are appropriate given what.
 
 ::: {.notes}
-Open with the core claim. The standard move in sociolinguistics is to define these by external correlates: dialects are geographic or social, registers are functional or situational. But these criteria often conflict. A "legal variety" might be a register or a discourse community. Multicultural Toronto English might be a dialect or a set of community-anchored registers. I'm proposing we ask a different question: what is appropriateness indexed to?
+Open with the core claim. The standard move in sociolinguistics is to define these by external correlates: dialects are geographic or social, registers are functional or situational. But these criteria often conflict. A "legal variety" might be a register or a discourse community. Multicultural Toronto English might be a dialect or a set of community-anchored registers. I'm proposing we ask a different question: what is appropriateness indexed to? A note on "appropriateness": I'm using this as a model-internal term for what listeners compute, not as a normative claim that any form is actually inappropriate. The whole point of the framework is to make visible how those judgments produce inequity.
 :::
 
 ## Two sources
@@ -56,7 +60,7 @@ Two theoretical pillars. Wiese provides the ontology: the primary unit is the co
 Same judgment type. Different conditioning variable.
 
 ::: {.notes}
-Here's the framework laid out. All three are dimensions of the same thing -- appropriateness. They differ in what that appropriateness is indexed to. This aligns with the three-waves trajectory in variationist sociolinguistics: first wave conditions on macro-demographic categories (roughly ascription), second wave on locally grounded groupings, third wave on social meaning and stance in interaction (roughly identification). The S/A/I framework gives these waves a conditioning-theoretic gloss.
+Here's the framework laid out. All three are dimensions of the same thing -- appropriateness. They differ in what that appropriateness is indexed to. People who know the three-waves literature better than I do may see a mapping here -- ascription aligning roughly with first-wave demographic conditioning, identification with third-wave attention to social meaning and stance. I'd be curious whether that mapping holds up or oversimplifies.
 :::
 
 ## Unpacking the anchors
@@ -87,20 +91,32 @@ When they diverge: you're navigating between how you're heard and who you're ori
 This is the key insight. A working-class kid in law school has an ascribed position (class background, regional origin) but identifies with a new community (legal profession). Their speech reflects both: the ascribed baseline modulated by the identificational target. Similarly, a speaker from a multiethnic Toronto neighbourhood may be ascribed to MTE but identify differently depending on context -- embracing it with friends, orienting toward Standard Canadian English with a teacher, code-switching fluidly across the day. The gap between ascription and identification is a major locus of sociolinguistic agency.
 :::
 
-## A case
+## A case: ascription overrides identification
 
-Someone ascribed as an MTE speaker, with friends:
+I lived in Japan for ten years. Japanese spouse, bilingual children.
 
-> [Yo, mans made it -- finally done that assignment.]{.mention}
+In restaurants, wait staff would ask my wife what I wanted. I'd reply in Japanese. They'd follow up with her.
 
-Same person, ten minutes later, with a teacher:
+. . .
 
-> [Yeah, I finished it this morning.]{.mention}
-
-The situation shifted. But so might identification -- orienting to different norms, seeking different approval.
+My **identification** was fully oriented to the Japanese-speaking community. My **ascription** overrode the signal. The listener couldn't update on the evidence because ascription was doing all the conditioning work.
 
 ::: {.notes}
-First-person "mans" is an MTE feature -- a niche where MTE speakers have an option that Standard Canadian English speakers lack. The choice between "mans" and "I" is conditioned on all three dimensions simultaneously. Situation: casual vs. institutional. Ascription: MTE speaker vs. not. Identification: whose norms are they orienting to right now? The standard analysis might call this "style-shifting" or "code-switching." The framework says: the conditioning variables shifted. Multiple anchors moved at once.
+This is the ascription-identification gap made personal. My identification history was thoroughly Japanese-oriented: decade of residence, Japanese family, daily life in Japanese. But ascription -- how listeners classified me on sight -- was so strong it blocked the uptake of the actual linguistic signal. This connects to what critical sociolinguists call raciolinguistic perception: the perception is prior to the signal. The framework gives that insight a formal address rather than treating it as an embarrassment for the model.
+:::
+
+## Identification shapes production
+
+I learned much of my Japanese from women -- friends, students, my wife. My default first person is [boku]{.mention}, not [ore]{.mention}. I never acquired the particle [sa]{.mention}. I tend to be more casual than the situation might warrant.
+
+. . .
+
+My production reflects whose norms I tracked -- that's the prior doing its work.
+
+The same values show up in English: I tell my EAP students to call me "Brett," not "Professor Reynolds." Identification can be consistent across languages even when ascription differs radically.
+
+::: {.notes}
+Two layers here. First, identification history shapes production distributions. My Japanese reflects whose norms I tracked during acquisition -- the women I learned from had different distributions from the stereotypical male speaker. Second, the anti-hierarchy preference operates across languages: same values, different ascriptive contexts. Identification encompasses whose values you're enacting, not only whose community you're in. And both layers collide with ascription: a white guy producing boku-inflected, casually-registered Japanese gets heard through the foreigner filter before any of these nuances land.
 :::
 
 ## How learners track this: the Bayesian story
@@ -117,22 +133,18 @@ S/A/I are the conditioning variables that tell the listener **which distribution
 The two theoretical layers are complementary: games explain population-level dynamics; Bayes explains individual learning. The learner's task is to figure out: given the situation, the speaker's social position, and whose norms seem to be in play, how likely is each variant? The formal version says: for each utterance, the probability of a form depends on situation, ascription, and identification together. Each contributes to the expected distribution. Situation selects register norms; ascription and identification select variety norms. The Bayesian computation is universal; S/A/I parameterise it.
 :::
 
-## The three dimensions formally
+## All three matter at once
 
-**Situation:** $Y \mid S{=}s \sim \text{Categorical}(\theta_s)$
+The full model conditions on situation, ascription, and identification together.
 
-With a teacher, favour [I]{.mention}; with friends, [mans]{.mention} signals solidarity.
+- Hold A and I constant, vary S: you see **register** variation
+- Hold S and I constant, vary A: you see **dialect** variation
+- Hold S and A constant, vary I: you see **identification** effects
 
-**Ascription:** $Y \mid A{=}a \sim \text{Categorical}(\theta_a)$
-
-MTE speakers show higher rates of th-stopping, first-person [mans]{.mention} -- features that persist across situations.
-
-**Identification:** $Y \mid I{=}i \sim \text{Categorical}(\theta_i)$
-
-An MTE speaker who orients to Standard Canadian English norms might suppress [mans]{.mention} even with friends.
+Register, dialect, and discourse community are slices of one joint distribution, not three separate models.
 
 ::: {.notes}
-In practice, all three matter at once. The full model conditions on situation, ascription, and identification together. A hierarchical structure captures this: identification sets the normative target, ascription provides the baseline capacities, and situation determines the moment-to-moment realisation. For quantitative work, this matters. Tokens from the same speaker aren't independent; speakers with similar ascriptions share structure; situational effects operate within these nested levels.
+This is the formal point without the notation. The three dimensions aren't independent -- they interact. The interesting theoretical claims (the ascription-identification gap, style-shifting as navigation) live in the interactions. For quantitative work, this means tokens from the same speaker aren't independent; speakers with similar ascriptions share structure; situational effects operate within these nested levels. I have backup slides with the formal notation if anyone wants to see the Bayesian model written out.
 :::
 
 ## Indexicality as inverse conditioning
@@ -141,30 +153,36 @@ If certain forms are more likely in certain contexts, then hearing a form tells 
 
 That's just Bayes' theorem running in reverse.
 
-- Hearing [mans]{.mention} suggests a casual, in-group **situation**
-- Hearing [mans]{.mention} suggests an MTE **ascription**
-- Using [mans]{.mention} claims alignment with MTE **identification**
+- Hearing [ore]{.mention} suggests a casual, male-peer **situation**
+- Hearing [boku]{.mention} from someone who looks like me suggests a foreigner **ascription** (even though it shouldn't)
+- Choosing [boku]{.mention} over [ore]{.mention} claims alignment with a particular **identification** network
 
-**Social meaning isn't an add-on. It's the informational flip-side of production conditioning.**
+**Social meaning is the informational flip-side of production conditioning.**
 
 ::: {.notes}
-This is elegant and important. We don't need a separate theory of indexicality. If speakers condition form choice on S/A/I, then listeners can invert the conditioning to infer S/A/I from the form. Because indexical links accrue in ideologically structured bundles, a single variant typically supports a field of partially compatible inferences rather than a one-to-one mapping -- context selects which region of that field is foregrounded. This connects to the Drummond and Schleef reading: they emphasise that indexical meanings are multiple, layered, and context-dependent.
+Indexicality falls out of the conditioning framework directly. If speakers condition form choice on S/A/I, listeners can invert the conditioning to infer S/A/I from the form. The Japanese first-person pronoun system is a good example because the same form carries situational, ascriptive, and identificational information simultaneously. A single variant supports a field of partially compatible inferences rather than a one-to-one mapping -- context selects which region of that field is foregrounded.
 :::
 
-## Ballroom culture: a case study
+## Anchoring can shift
 
-Lexical items like [shade]{.mention}, [read]{.mention}, [tea]{.mention}, [slay]{.mention}, [serving]{.mention} originated in Black and Latino queer ballroom culture.
+**Quotative [like]{.mention}** -- a trajectory I lived through:
+
+1. **Identification-indexed:** In the 1980s, marked orientation to a particular youth culture
+2. **Situational conditioning develops:** By the 1990s--2000s, conditioned on casual vs. formal register, across demographic groups
+3. **Ascription-like durability:** Now a baseline feature of North American English. Speakers aren't "identifying with" anyone -- it's just how quotation works
 
 . . .
 
-1. **Identification-indexed:** In-group markers, signalling orientation to ballroom norms
-2. **Situational conditioning develops:** Ironic vs. sincere use as forms spread via *Drag Race*
-3. **Approaching ascription-like durability:** Younger speakers acquire them without the original identificational reference
+**Japanese [だよね]{.mention}** -- the reverse trajectory:
 
-**The variety dimensions describe how appropriateness is currently anchored -- and that anchoring can shift.**
+1. **Ascription norm:** Women shouldn't use the assertive copula [だ]{.mention}
+2. **Identification as violation:** Young women adopt it in the 1990s; the DA.YO.NE pop hit (1994) makes it hyper-salient
+3. **Situational neutralisation:** Now unmarked casual speech across genders
+
+**The framework predicts both directions. Anchoring can shift any way.**
 
 ::: {.notes}
-This case is rich. The triad doesn't require that communities be purely one-dimensional -- ballroom culture involved both ascription (race, sexuality) and identification (participation in ball culture, house membership). The point is which anchor dominates appropriateness judgments for particular forms. For ballroom vocabulary, identification was the dominant anchor. Then the identificational base expanded: first broader queer culture, then stan Twitter, then mainstream social media. What started as identification markers developed situational conditioning. For some items, the trajectory continues toward ascription-like durability. This is diffusion analysed through the framework.
+These two cases show opposite trajectories through the same S/A/I space. Quotative like moved from identification to situation to ascription -- diffusion outward from an in-group. Japanese だよね moved from ascriptive norm (gendered particle ideology) through noticed violation to situational neutralisation. The framework doesn't privilege any particular trajectory; it just says anchoring can shift. The analytical work is the same: at any moment, you ask which anchor dominates appropriateness judgments for a particular form, and you can track how that changes. Okamoto (1995) documents the broader pattern of young Japanese women adopting "moderately masculine" sentence-final forms, of which だよね is a prime example. I was living in Japan during this shift and remember the DA.YO.NE song making the form culturally hyper-salient.
 :::
 
 ## What this reframes
@@ -190,15 +208,15 @@ Ascription is imposed. Identification is (partially) chosen.
 
 The gap between them is a major locus of speaker agency.
 
-Years later, even with close friends, someone might say [I finished]{.mention} instead of [mans made it]{.mention}. Same situation, same ascription. Different identification.
+My casual Japanese register and my "call me Brett" are the same move: identification pushing back against ascription-based hierarchy, in two different languages.
 
 ::: {.notes}
-This is where the framework does real theoretical work. In the standard analysis, this kind of long-term shift might be described as "dialect loss" or "accommodation." In the S/A/I framework, it's a shift in identification -- the speaker now orients to different norms. The ascription may or may not have changed (others may still perceive them as MTE); the situation is the same. What moved is whose approval they're seeking. This captures something important about sociolinguistic trajectories that's hard to express in the old framing.
+This is where the framework does real theoretical work. My casualness in Japanese reflects the same egalitarian values I enact in English, not just a proficiency artefact. The ascription differs radically (white foreigner in Japan, white professor in Toronto), but the identification is consistent: orient away from hierarchy. The framework captures this cross-linguistic consistency because identification is about values and normative orientation, not just community membership.
 :::
 
 ## The dark side
 
-A teacher hears [mans]{.mention} and something shifts -- in expectations, evaluation, behaviour.
+A listener hears a non-standard form and something shifts -- in expectations, evaluation, behaviour.
 
 That shift is an appropriateness judgment, conditioned on inferred ascription.
 
@@ -207,7 +225,7 @@ When everyone makes similar judgments, they become **coordination signals**.
 "Standard" vs "non-standard" = stable equilibrium. Self-sustaining. Hard to exit unilaterally.
 
 ::: {.notes}
-O'Connor's work on social contracts is key here. Once "standard" and "non-standard" become salient categories, they function as coordination signals. Employers coordinate on using "standard" speech as a hiring filter -- not because any individual employer decided to discriminate, but because everyone expects everyone else to use this signal. The equilibrium is self-sustaining. Even employers who know the linguistic facts face pressure to conform. The minimal conditions are simple: individuals recognise categories, condition behaviour on them, and adapt to improve their own payoff. A caveat though: the categories that structure this coordination have deep histories. The prestige hierarchy was built by colonialism, state formation, mass education. The game-theoretic point is that once these categories are salient, they sustain themselves through coordination -- but the framework doesn't explain how they got salient. History does that.
+I'm not telling you that standardisation is unjust -- you know that better than I do. What I'm offering is a formal account of why it's self-sustaining. In O'Connor's framework, once "standard" and "non-standard" become salient categories, they function as coordination signals. Employers coordinate on using "standard" speech as a hiring filter -- not because any individual employer decided to discriminate, but because everyone expects everyone else to use this signal. The equilibrium is self-sustaining. Even employers who know the linguistic facts face pressure to conform. A caveat: the categories that structure this coordination have deep histories. The prestige hierarchy was built by colonialism, state formation, mass education. The game-theoretic point is that once these categories are salient, they sustain themselves through coordination -- but the framework doesn't explain how they got salient. History does that. Ascription categories are historically produced, not just inputs to a model.
 :::
 
 ## Not fatalism
@@ -226,16 +244,28 @@ The framework makes visible *where* intervention could work: shift conditioning 
 This validates what critical sociolinguists have argued: individual attitude change is insufficient without structural change. Exhorting fairness doesn't shift equilibria. Anonymising applications, changing institutional policies, removing the signals coordination locks onto -- these change the game itself. The framework suggests two criteria for "good" conditioning: toward properties that are situation-relevant (not arbitrary sorting), and toward properties that are not ascribed (things people have agency over). We can keep teaching Standard varieties to those who want to learn them -- offering repertoire expansion is consistent with valuing identification. The problem is conditioning access on already having it.
 :::
 
+## What this predicts
+
+The framework generates testable claims:
+
+1. **Anchor-shift trajectories are ordered.** Forms spreading outward from an in-group should develop situational conditioning before approaching ascription-like durability -- not skip stages
+2. **Ascription-identification divergence has a distributional signature.** Speakers whose A and I diverge should show production patterns systematically intermediate between their ascription baseline and their identification target -- not random mixing
+3. **Structural interventions outperform attitude campaigns.** Changing what's conditioned on (anonymising, removing signals) should reduce inequity more than exhorting fairness -- because equilibria respond to payoff changes, not beliefs
+
+::: {.notes}
+These are predictions that distinguish this framework from alternative accounts. The first predicts an ordered diffusion trajectory that can be tested against corpus data. The second predicts a specific distributional signature for speakers navigating the A/I gap, testable with production data and independent measures of identification. The third is a policy prediction, harder to test but in principle distinguishable from attitude-change models. The contribution is conceptual, but the framework generates specific empirical predictions that alternatives don't.
+:::
+
 ## Summary
 
-1. Varieties are conditioning structures, not kinds of language
+1. Varieties are conditioning structures
 2. Register, dialect, discourse community = three anchors for the same judgment
 3. The ascription--identification gap is analytically central
 4. Bayesian learning explains how individuals track these dimensions
 5. Inequity stabilises through coordination, not just prejudice
 
 ::: {.notes}
-Recap the five key points. The contribution is conceptual, not empirical. I'm not presenting new data about any variety but offering a framework for seeing how concepts already in use relate to each other. The S/A/I distinction also provides a conditioning-theoretic gloss on the three-waves trajectory: from macro-categorical modelling of demographic groups (ascription), through locally grounded groupings, to attention to social meaning and stance in interaction (identification). The framework makes explicit what the waves were moving toward.
+Recap the five key points. The framework offers a way to see how concepts already in use relate to each other and what that means for practice. The S/A/I distinction may also connect to the three-waves trajectory -- I'd be interested in whether people who work in that tradition see the mapping as illuminating or oversimplifying.
 :::
 
 ## Discussion {.center}
@@ -244,8 +274,20 @@ Does the S/A/I distinction help with phenomena you work on?
 
 Where does it break?
 
-What would operationalising it look like?
+What predictions does it make about your data that alternative frameworks don't?
 
 ::: {.notes}
-Three specific provocations. First: is this useful? Does it clarify things you're already studying, or is it just relabelling? Second: where does it fail? Cases where the three dimensions can't be pulled apart, or where the framework makes wrong predictions. Third: the hardest question. Situation is tractable -- code it from observable features. Ascription is harder but doable -- group by region, class, etc. Identification is the challenge. If identification is inferred from the very linguistic choices being modelled, the analysis is circular. Independent measures are needed: network structure, self-report, stance markers, participation histories. What would that look like in your work?
+Three specific provocations. First: is this useful? Does it clarify things you're already studying, or is it just relabelling? Second: where does it fail? Cases where the three dimensions can't be pulled apart, or where the framework makes wrong predictions. Third: the hardest question. If someone can show me a case where the framework makes the same predictions as existing accounts, it's not earning its keep. I want to know where it generates novel expectations -- and especially where those expectations might be wrong. Also a methodological challenge I'd like help with: situation is tractable (code it from observable features), ascription is harder but doable (group by region, class, etc.), but identification is the challenge. If identification is inferred from the very linguistic choices being modelled, the analysis is circular. Independent measures are needed: network structure, self-report, stance markers, participation histories. What would that look like in your work?
+:::
+
+## Backup: formal notation {visibility="hidden"}
+
+The joint distribution over forms, conditioned on all three anchors:
+
+$$Y \mid S{=}s,\, A{=}a,\, I{=}i \;\sim\; \text{Categorical}(\theta_{s,a,i})$$
+
+Marginalise over A and I to recover register variation. Marginalise over S and I to recover dialect variation. The three "variety types" are slices of one joint distribution.
+
+::: {.notes}
+Backup slide for anyone who wants the formal notation. The key point is that the three dimensions interact -- you need the joint distribution, not three independent marginals. This is why the framework predicts specific distributional signatures for speakers whose ascription and identification diverge: their production reflects the joint conditioning, not a simple switch between two marginal distributions.
 :::
