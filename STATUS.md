@@ -57,3 +57,8 @@ Core insight: the three variety types differ only in *what you condition on* and
 - Grammaticality_de_idealized (normativity as conditioning)
 - Labels_to_Stabilisers (how labels stabilise distributions)
 - HPC book (varieties as cluster kinds)
+
+### Literature: Many Minds podcast (Frank & Lupyan, 2026-03-26)
+- **WEIRD problem in AI:** Frank: "if the people that the models are interacting with are substantially underrepresented then there are concerns." If models trained on English text produce English-biased cognition, that's varieties-as-conditioning-structure operating on AI.
+- **Instruction tuning ≈ education:** Lupyan: base models need instruction tuning to become competent conversationalists. Parallel to how social context (education, register, community) conditions linguistic behaviour — conditioning structure shapes output.
+- See `literature/many-minds-frank-lupyan-2026.md` for full notes + transcript.
