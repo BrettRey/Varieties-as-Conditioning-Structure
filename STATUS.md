@@ -51,6 +51,18 @@ Core insight: the three variety types differ only in *what you condition on* and
 - Acted on reviews: threaded projectibility through middle slides, restructured "What HPC adds," replaced "appropriateness," acknowledged third-wave overlap in notes, named political forces in Belfast
 - Talk delivered successfully at 10:10
 
+### 2026-03-28 afternoon/evening (Claude Opus, paper revision session)
+- Executed 8-task revision plan addressing review board feedback
+- Major additions: O'Connor integration, Kiesling appendix, Bayesian joint model, third-wave engagement, divergence-point prediction, HPC argument, Cavell connection
+- "Appropriateness" → "participant expectation" throughout
+- R2 review board: projectibility reviewer accepted; all others minor R&R
+- Made HPC argument directly rather than deferring to book
+- Polish pass: priamel opening, ring structure, rhetorical figures, humor, dash audit
+- Metacommentary and corrective framing rules added to house style guide
+- De-structured over-sectioned material (Sections 2, 3, 4, 7)
+- Brett took over with ChatGPT for continued editing during the session
+- Paper approaching LingBuzz-ready state
+
 ## Connections
 
 - English_LBC_functionalist (opportunity sets, posterior predictive)

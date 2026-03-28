@@ -39,3 +39,19 @@ Format: `## YYYY-MM-DD` then bullet points with **bold topic** and brief rationa
 - **D&S (Drummond & Schleef 2016) contribution.** The three waves each foreground one dimension of identity at the expense of the others. S/A/I holds all three as co-present parameters whose divergence generates predictions. This resolves a tension D&S identify but can't deliver on.
 - **Projectibility as organizing principle.** "What HPC adds" restructured so projectibility is the headline. Threaded projectibility through middle slides.
 - **"Each variable is a category and social context is one of the homeostatic properties in its cluster."** Replaces "social context is part of what makes the grammar work." States the HPC claim in HPC terms.
+
+### 2026-03-28 — Paper revision (Claude Opus, afternoon/evening)
+
+- **"Appropriateness" → "listener expectation" → "participant expectation."** "Listener" too narrow; "participant" covers speakers, listeners, readers, overhearers. Body keeps "listener expectation" where Section 4.1 specifically defines the listener-side model.
+- **A/I is "the crucial move," not "the key distinction."** Saying "key distinction" implies S is less important. The novelty is the *separation* of A from I, not a hierarchy among the three dimensions.
+- **HPC argument made directly, not deferred.** Varieties are HPC kinds because of the feedback loop: clustering generates predictions, predictions sustain clustering. Unlike a merely conventional partition (driving on the right), the specific partition matters because it supports induction. One paragraph in conclusion.
+- **Bayesian formalism is explicitly expository.** The equations identify conditioning variables, not a fitted model. The paper says so.
+- **Kiesling statistics corrected.** Table 3 numbers (all tokens), not progressive-only. Speed 95→82 is minimal shift, not reversal. Reversal for Speed and Mick appears in progressive-only forms (Figures 7-8). Waterson's 4-token caveat noted.
+- **Kiesling appendix: consistency, not prediction.** The paper honestly says the demonstration shows consistency (re-describing published data). A stronger test would be prediction. Named as the next empirical step.
+- **Cavell's knowledge/acknowledgment connected to A/I.** One sentence in paper, fuller development in book Chapter 16. Ascription = knowledge; identification = acknowledgment (how the speaker bears their position). Cited to *The Claim of Reason* (1979).
+- **Subtitle dropped.** "Varieties as Conditioning Structure" stands alone.
+- **Priamel opening.** Three definitions that fail at their boundaries, culminating in the conditioning question.
+- **Ring structure.** Final sentence returns to opening question: "Not what they are, but what they're conditioned on — and the conditioning is all the difference there is."
+- **Metacommentary frames and corrective framing added to house style guide.** No "a potential worry:" or "it isn't X; it's Y" by default.
+- **Sections 2, 3, 4 de-structured.** Subsection headings removed where over-structured. Code-mixing added to Section 2.
+- **Devil's advocate: three main attacks considered.** (1) A as model-of-a-model — dissolved by time-indexing (Pearl). (2) O'Connor undermines HPC — no, her promiscuous realism refines HPC. (3) Exogenous/endogenous collapses — no, they're reciprocal, not one-directional.
