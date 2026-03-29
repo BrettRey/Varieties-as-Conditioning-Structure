@@ -72,6 +72,14 @@ Core insight: the three variety types differ only in *what you condition on* and
 - Rewrote the conclusion, then resynced the abstract and introduction to match the weaker claim and removed wording that presupposed the revision history.
 - House-style cleanup continued throughout; `check-style.py` is clean and `make` succeeds. Remaining build noise is limited to the small overfull box in the Bayesian opening and the usual `microtype`/font warnings.
 
+### 2026-03-29 afternoon (Claude Opus, review board + polish + ship)
+- Three rounds of review board (5 independent reviewers each), synthesized after each round. Consensus: A/I separation is strongest move; HPC threshold question is the biggest remaining exposure; identification operationalizability is the practical bottleneck.
+- Proofread audit (linter + manual checklist): fixed AI voice words (underpin→ground, robust→persistent), punctuation (⟨Th⟩→⟨th⟩, comma collision→parentheses, bare commas→en-dashes), split overlong paragraph, cut breezy aside.
+- Bibliography validation: all 28 citation keys resolve; 9 local entries ready for `/push-bib`.
+- HPC projectibility audit: GREEN across all 7 checks. Projectibility is structural, not decorative.
+- Conclusion fix: echoed purpose-relative projectibility across parties (same category supports different inferences for in-group vs. outsider).
+- Paper posted to LingBuzz. 18 pages, clean build.
+
 ## Connections
 
 - English_LBC_functionalist (opportunity sets, posterior predictive)
