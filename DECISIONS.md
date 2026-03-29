@@ -55,3 +55,14 @@ Format: `## YYYY-MM-DD` then bullet points with **bold topic** and brief rationa
 - **Metacommentary frames and corrective framing added to house style guide.** No "a potential worry:" or "it isn't X; it's Y" by default.
 - **Sections 2, 3, 4 de-structured.** Subsection headings removed where over-structured. Code-mixing added to Section 2.
 - **Devil's advocate: three main attacks considered.** (1) A as model-of-a-model — dissolved by time-indexing (Pearl). (2) O'Connor undermines HPC — no, her promiscuous realism refines HPC. (3) Exogenous/endogenous collapses — no, they're reciprocal, not one-directional.
+
+## 2026-03-29
+
+- **Scaled the headline claim back to stable, purpose-relative projectibility.** The paper no longer tries to settle the full HPC-threshold question for varieties. It argues for stable, purpose-relative prediction and leaves stronger ontological claims open.
+- **Section 5 now distinguishes exogenous conditioning from endogenous coordination.** S/A/I are treated as exogenous maintenance dynamics and are the inputs to the Bayesian model; coordination costs remain endogenous and are not folded into that layer.
+- **Exchangeability is now across encounters, not within them.** This removes the contradiction with sequential Bayesian updating inside interaction.
+- **Inverse conditioning is framed as an adaptation, not a novelty claim.** RSA/social-meaning work is cited so the paper no longer sounds like it is inventing Bayesian social inference from scratch.
+- **Identification operationalization is made concrete but demanding.** The paper now names network, participation-history, and experimental strategies while acknowledging that clean independent measurement is hard.
+- **Raciolinguistic perception is treated as a limit on the current model.** The draft now says ideological asymmetry may alter not just priors over ascription but the likelihood itself, in line with work on the white listening subject.
+- **Section 7 now ties inequity to purpose-relative projectibility.** The same variety can support in-group prediction and outsider discrimination because different purposes license different inferences from the same cluster.
+- **Abstract, introduction, and conclusion were resynced to the weaker claim.** Draft-history-relative wording was removed, and the opening/ending now state the argument directly for a first-time reader.

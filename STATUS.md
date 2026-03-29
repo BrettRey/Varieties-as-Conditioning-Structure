@@ -1,6 +1,6 @@
 # STATUS: Varieties as Conditioning Structure
 
-**Stage:** Seed / exploratory notes
+**Stage:** Draft / submission polishing
 **Created:** 2026-01-20
 
 ## What This Is
@@ -62,6 +62,15 @@ Core insight: the three variety types differ only in *what you condition on* and
 - De-structured over-sectioned material (Sections 2, 3, 4, 7)
 - Brett took over with ChatGPT for continued editing during the session
 - Paper approaching LingBuzz-ready state
+
+### 2026-03-29 afternoon (Codex, revision + ship)
+- Tightened the paper around a weaker and cleaner claim: varieties are worth positing when they support stable, purpose-relative prediction; the draft no longer tries to win the full HPC-threshold question.
+- Reworked the exogenous/endogenous split so S/A/I are explicit exogenous maintenance dynamics feeding the Bayesian layer, while coordination costs remain endogenous and group-level.
+- Fixed Section 5 technical issues: exchangeability now holds across encounters sharing an S/A/I configuration, not within them; RSA/social-meaning work is cited; notation and glosses were tightened.
+- Added a more concrete identification-operationalization paragraph and an explicit raciolinguistic-listening limitation.
+- Reworked Section 7 so inequity is tied to purpose-relative projectibility and to shifts among situation, identification, and outsider ascription.
+- Rewrote the conclusion, then resynced the abstract and introduction to match the weaker claim and removed wording that presupposed the revision history.
+- House-style cleanup continued throughout; `check-style.py` is clean and `make` succeeds. Remaining build noise is limited to the small overfull box in the Bayesian opening and the usual `microtype`/font warnings.
 
 ## Connections
 
